@@ -20,6 +20,17 @@ def get_numbers():
     return numbers
 
 
+def add_numbers(numbers):
+    """
+    Add all numbers in the list
+    Args:
+        numbers (list): list of numbers to add
+    Returns:
+        float: Sum of all numbers
+    """
+    return sum(numbers)
+
+
 def main():
     # main function to run the calculator
     print("=" * 50)
@@ -33,7 +44,12 @@ def main():
     print("what operation would you like to perform?")
     print("1. Add")
     print("2. Multiply")
-    # choice = input("Enter your choice (1/2): ")
+    choice = input("Enter your choice (1/2): ").strip()
+    if choice == '1':
+        result = add_numbers(numbers)
+        print(f"\n Result: {' + '.join(map(str, numbers))} = {result}")
+    else:
+        print("Invalid choice")
     # this implementation will be done by Becky
 
 
