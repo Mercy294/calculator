@@ -35,11 +35,7 @@ def test_multiply_numbers_positive():
 
 
 def test_multiply_numbers_by_zero():
-<<<<<<< HEAD
-    # test multiplication with 0
-=======
     # test multiplication with zero
->>>>>>> upstream/main
     assert multiply_numbers([2, 0]) == 0
     assert multiply_numbers([1, 2, 0]) == 0
 
