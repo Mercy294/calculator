@@ -31,6 +31,7 @@ def add_numbers(numbers):
 
 
 def multiply_numbers(numbers):
+<<<<<<< HEAD
     '''
     Multiply all numbers in the list
     Args:
@@ -42,6 +43,18 @@ def multiply_numbers(numbers):
     for number in numbers:
         result *= number
 
+=======
+    """
+    Multiply all numbers in the list
+    Args:
+        numbers (list): list of numbers to multiply
+    Returns:
+        float: Product of all numbers
+    """
+    result = 1
+    for number in numbers:
+        result *= number
+>>>>>>> upstream/main
     return result
 
 
@@ -58,7 +71,12 @@ def main():
     print("\n What operation would You like to perform?")
     print("1. Add")
     print("2. Multiply")
+<<<<<<< HEAD
     choice = input("Enter your choice (1 or 2): ").strip()
+=======
+    choice = input("Enter your choice (1/2): ").strip()
+    # this implementation will be done by Becky
+>>>>>>> upstream/main
     if choice == '1':
         result = add_numbers(numbers)
         print(f"\n Result: {' + '.join(map(str, numbers))} = {result}")
